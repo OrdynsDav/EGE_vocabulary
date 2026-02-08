@@ -5,12 +5,15 @@ import { formatAccent } from "@/utils/format-accent";
 import { LoaderDots } from "../Loaders/Dots";
 import { shuffle } from "@/utils/shuffle";
 import { AutoNextCountdown } from "../AutoNextCountdown/AutoNextCountdown";
+import { useTab } from "@/components/Providers/TabProvider/TabProvider";
 import { useState, useEffect, useRef, useCallback } from "react";
 
 const AUTO_NEXT_SEC = 15;
 const AUTO_NEXT_MS = AUTO_NEXT_SEC * 1000;
 
 export function Card({ words }: { words: CardProps[] }) {
+  const { tab } = useTab();
+  const activeTab = tab === 'accent' ? 'accents' : 'spelling';
   const [currentWord, setCurrentWord] = useState<CardProps | null>(null);
   const [isLoadingNext, setIsLoadingNext] = useState(false);
   const [revealedWrongIndex, setRevealedWrongIndex] = useState<number | null>(null);
@@ -19,7 +22,6 @@ export function Card({ words }: { words: CardProps[] }) {
 
   useEffect(() => {
     setCurrentWord(shuffle(words));
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- only pick random word once on mount
   }, []);
 
   const goToNextWord = useCallback(() => {
@@ -67,7 +69,7 @@ export function Card({ words }: { words: CardProps[] }) {
   const isRevealed = revealedWrongIndex !== null;
 
   return (
-    <div className="flex flex-col h-full items-center gap-6">
+    <div className="section-animate flex flex-col h-full items-center gap-6 w-fit m-auto">
       <div className="card__title flex gap-1 flex-wrap text-4xl font-bold">
         {formatAccent(currentWord.accent, currentWord.stress_index, {
           onCorrect: handleCorrect,

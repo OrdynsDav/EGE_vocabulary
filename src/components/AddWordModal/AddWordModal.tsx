@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { CardProps } from "@/interfaces";
 
 const VOWEL_REG = /[аеёиоуыэюяАЕЁИОУЫЭЮЯ]/;
@@ -14,21 +14,33 @@ interface AddWordModalProps {
 }
 
 export function AddWordModal({ open, onClose, onSave }: AddWordModalProps) {
+  const [mounted, setMounted] = useState(false);
+  const [animateIn, setAnimateIn] = useState(false);
   const [step, setStep] = useState<Step>("input");
   const [inputValue, setInputValue] = useState("");
   const [word, setWord] = useState("");
 
-  const handleOpenChange = useCallback(
-    (nextOpen: boolean) => {
-      if (!nextOpen) {
-        setStep("input");
-        setInputValue("");
-        setWord("");
-        onClose();
-      }
-    },
-    [onClose]
-  );
+  // Управляем монтированием и анимацией
+  useEffect(() => {
+    if (open) {
+      setMounted(true);
+      const frame = setTimeout(() => {
+        setAnimateIn(true);
+      }, 0);
+      return () => clearTimeout(frame);
+    } else {
+      setAnimateIn(false);
+      const timer = setTimeout(() => setMounted(false), 300);
+      return () => clearTimeout(timer);
+    }
+  }, [open]);
+
+  const handleClose = useCallback(() => {
+    setStep("input");
+    setTimeout(() => setInputValue(""), 300)
+    setWord("");
+    onClose();
+  }, [onClose]);
 
   const handleSpecifyStress = () => {
     const trimmed = inputValue.trim().toLowerCase();
@@ -39,21 +51,25 @@ export function AddWordModal({ open, onClose, onSave }: AddWordModalProps) {
 
   const handleVowelClick = (stressIndex: number) => {
     onSave({ accent: word, stress_index: stressIndex });
-    handleOpenChange(false);
+    handleClose();
   };
 
-  if (!open) return null;
+  if (!mounted) return null;
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
-      onClick={() => handleOpenChange(false)}
+      className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 transition-opacity duration-300 ease-out ${
+        animateIn ? "opacity-100" : "opacity-0"
+      }`}
+      onClick={handleClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="add-word-modal-title"
     >
       <div
-        className="bg-neutral-800 rounded-xl shadow-xl max-w-md w-full p-6 flex flex-col gap-4"
+        className={`bg-neutral-800 rounded-xl shadow-xl max-w-md w-full p-6 flex flex-col gap-4 transform transition-all duration-300 ease-out ${
+          animateIn ? "scale-100 translate-y-0" : "scale-95 translate-y-4"
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
         <h2 id="add-word-modal-title" className="text-xl font-semibold text-gray-200">
@@ -74,7 +90,7 @@ export function AddWordModal({ open, onClose, onSave }: AddWordModalProps) {
             <div className="flex gap-2 justify-end">
               <button
                 type="button"
-                onClick={() => handleOpenChange(false)}
+                onClick={handleClose}
                 className="px-4 py-2 rounded-lg text-gray-300 hover:bg-neutral-700"
               >
                 Отмена

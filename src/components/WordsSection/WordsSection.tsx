@@ -5,7 +5,9 @@ import { Card } from "@/components/Card/Card";
 import { TabButtons } from "@/components/TabButtons/TabButtons";
 import { AddWordModal } from "@/components/AddWordModal/AddWordModal";
 import { CardProps } from "@/interfaces";
-import { addWord, fetchWords } from "@/api/fetches";
+import { addWord } from "@/api/fetches";
+import { useTab } from "../Providers/TabProvider/TabProvider";
+import { UnavailableSection } from "../SpellingSection/UnavailableSection";
 
 interface WordsSectionProps {
   initialWords: CardProps[];
@@ -14,6 +16,7 @@ interface WordsSectionProps {
 export function WordsSection({ initialWords }: WordsSectionProps) {
   const [words, setWords] = useState(initialWords);
   const [modalOpen, setModalOpen] = useState(false);
+  const {tab, animate} = useTab()
 
   const handleAddWord = useCallback(async (word: CardProps) => {
     try {
@@ -28,7 +31,7 @@ export function WordsSection({ initialWords }: WordsSectionProps) {
   return (
     <>
       <TabButtons onAddWord={() => setModalOpen(true)} />
-      <Card words={words} />
+      {tab == "spelling" ? <UnavailableSection animate={animate}/> : <Card words={words}/>}
       <AddWordModal
         open={modalOpen}
         onClose={() => setModalOpen(false)}

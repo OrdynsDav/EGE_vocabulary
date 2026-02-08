@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useTab } from "@/components/Providers/TabProvider/TabProvider";
 
 interface TabButtonsProps {
   onAddWord?: () => void;
 }
 
 export function TabButtons({ onAddWord }: TabButtonsProps) {
-  const [activeTab, setActiveTab] = useState<"spelling" | "accents">(
-    "accents",
-  );
+  const { tab, switchTab } = useTab();
+
+  const activeTab = tab === 'accent' ? 'accents' : 'spelling';
 
   const activeStyles =
     "active px-2 text-lg font-semibold text-gray-200 transition-colors relative";
@@ -17,7 +17,7 @@ export function TabButtons({ onAddWord }: TabButtonsProps) {
     "px-2 text-lg font-semibold text-gray-400 transition-colors relative";
 
   const handleTabClick = (tab: "spelling" | "accents") => {
-    setActiveTab(tab);
+    switchTab(tab === 'accents' ? 'accent' : 'spelling');
   };
 
   return (
@@ -36,17 +36,15 @@ export function TabButtons({ onAddWord }: TabButtonsProps) {
           Правописание
         </button>
       </div>
-      {onAddWord && (
-        <button
-          type="button"
-          onClick={onAddWord}
-          className="flex items-center justify-center p-2 rounded-md bg-blue-500 text-gray-300 w-12 h-12 max-[400px]:w-8 max-[400px]:h-8 hover:bg-gray-700 hover:text-gray-100 transition-colors text-4xl max-[400px]:text-3xl"
-          title="Добавить слово"
-          aria-label="Добавить слово"
-        >
-          <span>+</span>
-        </button>
-      )}
+      <button
+        type="button"
+        onClick={onAddWord}
+        className="flex items-center justify-center p-2 rounded-md bg-blue-500 text-gray-300 w-12 h-12 max-[400px]:w-8 max-[400px]:h-8 hover:bg-gray-700 hover:text-gray-100 transition-colors text-4xl max-[400px]:text-3xl"
+        title="Добавить слово"
+        aria-label="Добавить слово"
+      >
+        <span>+</span>
+      </button>
     </div>
   );
 }

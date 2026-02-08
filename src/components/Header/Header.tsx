@@ -105,6 +105,7 @@ export function Header() {
             </text>
           </g>
         </svg>
+        
       </div>
     </header>
   );
