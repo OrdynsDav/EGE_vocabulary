@@ -1,7 +1,7 @@
 import { WordsSchema } from "./interfaces";
 import type { CardProps } from "@/interfaces";
 
-const BASE_URL = "http://localhost:3001"
+const BASE_URL = "https://ege-liart.vercel.app"
 
 export async function fetchWords(): Promise<WordsSchema> {
   try {
