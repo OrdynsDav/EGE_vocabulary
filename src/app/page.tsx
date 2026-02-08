@@ -1,21 +1,13 @@
-import { CardList } from "@/components/CardList/CardList";
-import { LanguageProvider } from "@/components/LanguageProvider/LanguageProvider";
-import { TabButtons } from "@/components/TabButtons/TabButtons";
-import { getInitialLanguage } from "@/utils/cookie";
-import { cookies } from "next/headers";
+import { fetchWords } from "@/api/fetches";
+import { WordsSection } from "@/components/WordsSection/WordsSection";
 
-export default function Home() {
-  const cookieStore = cookies();
-  const initialLanguage = getInitialLanguage(cookieStore) as
-    | "russian"
-    | "english";
+export default async function Home() {
+  const response = await fetchWords();
+
   return (
-    <section className="pt-12">
+    <section className="pt-6">
       <div className="container">
-        <LanguageProvider initialLanguage={initialLanguage}>
-          <TabButtons />
-          <CardList/>
-        </LanguageProvider>
+        <WordsSection initialWords={response.words} />
       </div>
     </section>
   );

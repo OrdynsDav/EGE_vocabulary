@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 
 import { CardProps } from "@/interfaces";
 import { Card } from "../Card/Card";
@@ -84,7 +84,7 @@ export function CardList() {
     <ul className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {data.slice(0, visibleCount).map((card, index) => (
         <li key={index} className="card">
-          <Card accent={card.accent} meaning={card.meaning} />
+          <Card accent={card.accent} />
         </li>
       ))}
 
@@ -102,3 +102,4 @@ export function CardList() {
     </ul>
   );
 }
+ */

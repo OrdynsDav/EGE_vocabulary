@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -29,7 +29,7 @@ body {
   font-style: normal;
   font-optical-sizing: auto;
   font-display: swap;
-  padding: 40px 10px;
+  padding: 40px 0;
 }
 
 h1,
@@ -52,7 +52,11 @@ button {
 }
 
 .tab-button.active:after {
-  transform: scaleX(1);
+  transform: scaleX(1) translateY(14px);
+
+  @media (width > 400px) {
+    transform: scaleX(1) translateY(22px);
+  }
 }
 
 .tab-button:after {
@@ -63,8 +67,12 @@ button {
   right: 0;
   height: 3px;
   background-color: #3b82f6;
-  transform: scaleX(0);
+  transform: scaleX(0) translateY(14px);
   transition: transform .3s ease;
+
+  @media (width > 400px) {
+    transform: scaleX(0) translateY(22px);
+  }
 }
 
 

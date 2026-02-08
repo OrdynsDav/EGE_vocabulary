@@ -1,0 +1,1196 @@
+{
+  "words": [
+    {
+      "accent": "абитуриент",
+      "stress_index": 7
+    },
+    {
+      "accent": "абонемент",
+      "stress_index": 6
+    },
+    {
+      "accent": "абрикос",
+      "stress_index": 5
+    },
+    {
+      "accent": "абрикосовый",
+      "stress_index": 5
+    },
+    {
+      "accent": "академия",
+      "stress_index": 4
+    },
+    {
+      "accent": "академический",
+      "stress_index": 6
+    },
+    {
+      "accent": "аквамарин",
+      "stress_index": 7
+    },
+    {
+      "accent": "акварель",
+      "stress_index": 5
+    },
+    {
+      "accent": "акварельный",
+      "stress_index": 5
+    },
+    {
+      "accent": "аккомпанемент",
+      "stress_index": 10
+    },
+    {
+      "accent": "аккомпанировать",
+      "stress_index": 8
+    },
+    {
+      "accent": "аккомпаниатор",
+      "stress_index": 11
+    },
+    {
+      "accent": "аннотация",
+      "stress_index": 5
+    },
+    {
+      "accent": "антресоли",
+      "stress_index": 6
+    },
+    {
+      "accent": "апелляция",
+      "stress_index": 5
+    },
+    {
+      "accent": "апеллировать",
+      "stress_index": 5
+    },
+    {
+      "accent": "аплодировать",
+      "stress_index": 5
+    },
+    {
+      "accent": "аплодисменты",
+      "stress_index": 8
+    },
+    {
+      "accent": "аппаратура",
+      "stress_index": 7
+    },
+    {
+      "accent": "аппетит",
+      "stress_index": 5
+    },
+    {
+      "accent": "аромат",
+      "stress_index": 4
+    },
+    {
+      "accent": "ароматный",
+      "stress_index": 4
+    },
+    {
+      "accent": "архитектор",
+      "stress_index": 5
+    },
+    {
+      "accent": "архитектура",
+      "stress_index": 8
+    },
+    {
+      "accent": "асфальт",
+      "stress_index": 3
+    },
+    {
+      "accent": "асфальтировать",
+      "stress_index": 7
+    },
+    {
+      "accent": "атмосфера",
+      "stress_index": 6
+    },
+    {
+      "accent": "атмосферный",
+      "stress_index": 6
+    },
+    {
+      "accent": "аттракцион",
+      "stress_index": 8
+    },
+    {
+      "accent": "аукцион",
+      "stress_index": 5
+    },
+    {
+      "accent": "багаж",
+      "stress_index": 3
+    },
+    {
+      "accent": "багажный",
+      "stress_index": 3
+    },
+    {
+      "accent": "багровый",
+      "stress_index": 4
+    },
+    {
+      "accent": "багроветь",
+      "stress_index": 6
+    },
+    {
+      "accent": "багряный",
+      "stress_index": 4
+    },
+    {
+      "accent": "бадминтон",
+      "stress_index": 7
+    },
+    {
+      "accent": "баланс",
+      "stress_index": 3
+    },
+    {
+      "accent": "балансировать",
+      "stress_index": 6
+    },
+    {
+      "accent": "балкон",
+      "stress_index": 4
+    },
+    {
+      "accent": "балконный",
+      "stress_index": 4
+    },
+    {
+      "accent": "барельеф",
+      "stress_index": 6
+    },
+    {
+      "accent": "баскетбол",
+      "stress_index": 7
+    },
+    {
+      "accent": "баскетбольный",
+      "stress_index": 7
+    },
+    {
+      "accent": "бассейн",
+      "stress_index": 4
+    },
+    {
+      "accent": "берёза",
+      "stress_index": 3
+    },
+    {
+      "accent": "берёзовый",
+      "stress_index": 3
+    },
+    {
+      "accent": "безудержный",
+      "stress_index": 3
+    },
+    {
+      "accent": "бенефис",
+      "stress_index": 6
+    },
+    {
+      "accent": "библиотека",
+      "stress_index": 7
+    },
+    {
+      "accent": "блокировать",
+      "stress_index": 4
+    },
+    {
+      "accent": "блюдо",
+      "stress_index": 2
+    },
+    {
+      "accent": "брала",
+      "stress_index": 4
+    },
+    {
+      "accent": "бухгалтер",
+      "stress_index": 4
+    },
+    {
+      "accent": "валовой",
+      "stress_index": 6
+    },
+    {
+      "accent": "вероисповедание",
+      "stress_index": 10
+    },
+    {
+      "accent": "ветеран",
+      "stress_index": 5
+    },
+    {
+      "accent": "ворота",
+      "stress_index": 3
+    },
+    {
+      "accent": "вручит",
+      "stress_index": 4
+    },
+    {
+      "accent": "гастрономия",
+      "stress_index": 7
+    },
+    {
+      "accent": "генезис",
+      "stress_index": 1
+    },
+    {
+      "accent": "граффити",
+      "stress_index": 5
+    },
+    {
+      "accent": "дефис",
+      "stress_index": 1
+    },
+    {
+      "accent": "дешевизна",
+      "stress_index": 8
+    },
+    {
+      "accent": "диспансер",
+      "stress_index": 7
+    },
+    {
+      "accent": "договор",
+      "stress_index": 6
+    },
+    {
+      "accent": "документ",
+      "stress_index": 5
+    },
+    {
+      "accent": "досуг",
+      "stress_index": 3
+    },
+    {
+      "accent": "дремота",
+      "stress_index": 4
+    },
+    {
+      "accent": "еретик",
+      "stress_index": 2
+    },
+    {
+      "accent": "жалюзи",
+      "stress_index": 5
+    },
+    {
+      "accent": "завидно",
+      "stress_index": 3
+    },
+    {
+      "accent": "заговор",
+      "stress_index": 1
+    },
+    {
+      "accent": "закупорить",
+      "stress_index": 5
+    },
+    {
+      "accent": "запломбировать",
+      "stress_index": 7
+    },
+    {
+      "accent": "звонит",
+      "stress_index": 4
+    },
+    {
+      "accent": "избаловать",
+      "stress_index": 7
+    },
+    {
+      "accent": "каталог",
+      "stress_index": 5
+    },
+    {
+      "accent": "каучук",
+      "stress_index": 4
+    },
+    {
+      "accent": "квартал",
+      "stress_index": 5
+    },
+    {
+      "accent": "километр",
+      "stress_index": 5
+    },
+    {
+      "accent": "кладовая",
+      "stress_index": 6
+    },
+    {
+      "accent": "клеить",
+      "stress_index": 2
+    },
+    {
+      "accent": "колледж",
+      "stress_index": 1
+    },
+    {
+      "accent": "компас",
+      "stress_index": 1
+    },
+    {
+      "accent": "конус",
+      "stress_index": 1
+    },
+    {
+      "accent": "крапива",
+      "stress_index": 4
+    },
+    {
+      "accent": "кремень",
+      "stress_index": 4
+    },
+    {
+      "accent": "кухонный",
+      "stress_index": 1
+    },
+    {
+      "accent": "ломоть",
+      "stress_index": 1
+    },
+    {
+      "accent": "маркетинг",
+      "stress_index": 1
+    },
+    {
+      "accent": "мельком",
+      "stress_index": 1
+    },
+    {
+      "accent": "мусоропровод",
+      "stress_index": 10
+    },
+    {
+      "accent": "намерение",
+      "stress_index": 3
+    },
+    {
+      "accent": "некролог",
+      "stress_index": 6
+    },
+    {
+      "accent": "облегчить",
+      "stress_index": 6
+    },
+    {
+      "accent": "оптовый",
+      "stress_index": 3
+    },
+    {
+      "accent": "аэропорты",
+      "stress_index": 5
+    },
+    {
+      "accent": "банты",
+      "stress_index": 1
+    },
+    {
+      "accent": "бороду",
+      "stress_index": 1
+    },
+    {
+      "accent": "бухгалтеров",
+      "stress_index": 4
+    },
+    {
+      "accent": "вероисповедание",
+      "stress_index": 9
+    },
+    {
+      "accent": "водопровод",
+      "stress_index": 8
+    },
+    {
+      "accent": "газопровод",
+      "stress_index": 8
+    },
+    {
+      "accent": "гражданство",
+      "stress_index": 5
+    },
+    {
+      "accent": "дефис",
+      "stress_index": 3
+    },
+    {
+      "accent": "дешевизна",
+      "stress_index": 5
+    },
+    {
+      "accent": "договорённость",
+      "stress_index": 7
+    },
+    {
+      "accent": "еретик",
+      "stress_index": 4
+    },
+    {
+      "accent": "значимость",
+      "stress_index": 2
+    },
+    {
+      "accent": "иксы",
+      "stress_index": 0
+    },
+    {
+      "accent": "конусов",
+      "stress_index": 1
+    },
+    {
+      "accent": "корысть",
+      "stress_index": 3
+    },
+    {
+      "accent": "краны",
+      "stress_index": 2
+    },
+    {
+      "accent": "кремня",
+      "stress_index": 5
+    },
+    {
+      "accent": "лекторов",
+      "stress_index": 1
+    },
+    {
+      "accent": "локтя",
+      "stress_index": 1
+    },
+    {
+      "accent": "локтей",
+      "stress_index": 4
+    },
+    {
+      "accent": "лыжня",
+      "stress_index": 4
+    },
+    {
+      "accent": "местностей",
+      "stress_index": 1
+    },
+    {
+      "accent": "недруг",
+      "stress_index": 1
+    },
+    {
+      "accent": "недуг",
+      "stress_index": 3
+    },
+    {
+      "accent": "ненависть",
+      "stress_index": 1
+    },
+    {
+      "accent": "нефтепровод",
+      "stress_index": 9
+    },
+    {
+      "accent": "новостей",
+      "stress_index": 6
+    },
+    {
+      "accent": "ногтя",
+      "stress_index": 1
+    },
+    {
+      "accent": "ногтей",
+      "stress_index": 4
+    },
+    {
+      "accent": "отзыв",
+      "stress_index": 0
+    },
+    {
+      "accent": "отзыв",
+      "stress_index": 3
+    },
+    {
+      "accent": "отрочество",
+      "stress_index": 0
+    },
+    {
+      "accent": "партер",
+      "stress_index": 4
+    },
+    {
+      "accent": "портфель",
+      "stress_index": 5
+    },
+    {
+      "accent": "приданое",
+      "stress_index": 4
+    },
+    {
+      "accent": "призыв",
+      "stress_index": 4
+    },
+    {
+      "accent": "свёкла",
+      "stress_index": 2
+    },
+    {
+      "accent": "сироты",
+      "stress_index": 3
+    },
+    {
+      "accent": "созыв",
+      "stress_index": 3
+    },
+    {
+      "accent": "сосредоточение",
+      "stress_index": 8
+    },
+    {
+      "accent": "средства",
+      "stress_index": 2
+    },
+    {
+      "accent": "статуя",
+      "stress_index": 2
+    },
+    {
+      "accent": "столяр",
+      "stress_index": 4
+    },
+    {
+      "accent": "таможня",
+      "stress_index": 3
+    },
+    {
+      "accent": "торты",
+      "stress_index": 1
+    },
+    {
+      "accent": "туфля",
+      "stress_index": 1
+    },
+    {
+      "accent": "цемент",
+      "stress_index": 3
+    },
+    {
+      "accent": "центнер",
+      "stress_index": 1
+    },
+    {
+      "accent": "цепочка",
+      "stress_index": 3
+    },
+    {
+      "accent": "шарфы",
+      "stress_index": 1
+    },
+    {
+      "accent": "шофёр",
+      "stress_index": 3
+    },
+    {
+      "accent": "эксперт",
+      "stress_index": 4
+    },
+    {
+      "accent": "верна",
+      "stress_index": 4
+    },
+    {
+      "accent": "значимый",
+      "stress_index": 2
+    },
+    {
+      "accent": "красивее",
+      "stress_index": 4
+    },
+    {
+      "accent": "красивейший",
+      "stress_index": 4
+    },
+    {
+      "accent": "ловка",
+      "stress_index": 4
+    },
+    {
+      "accent": "мозаичный",
+      "stress_index": 4
+    },
+    {
+      "accent": "прозорливый",
+      "stress_index": 7
+    },
+    {
+      "accent": "прозорлива",
+      "stress_index": 7
+    },
+    {
+      "accent": "сливовый",
+      "stress_index": 2
+    },
+    {
+      "accent": "бралась",
+      "stress_index": 4
+    },
+    {
+      "accent": "взяла",
+      "stress_index": 4
+    },
+    {
+      "accent": "взялась",
+      "stress_index": 4
+    },
+    {
+      "accent": "влилась",
+      "stress_index": 4
+    },
+    {
+      "accent": "ворвалась",
+      "stress_index": 6
+    },
+    {
+      "accent": "воспринять",
+      "stress_index": 7
+    },
+    {
+      "accent": "восприняла",
+      "stress_index": 9
+    },
+    {
+      "accent": "воссоздала",
+      "stress_index": 9
+    },
+    {
+      "accent": "гнала",
+      "stress_index": 4
+    },
+    {
+      "accent": "гналась",
+      "stress_index": 4
+    },
+    {
+      "accent": "добрала",
+      "stress_index": 6
+    },
+    {
+      "accent": "добралась",
+      "stress_index": 6
+    },
+    {
+      "accent": "дождалась",
+      "stress_index": 6
+    },
+    {
+      "accent": "дозвонится",
+      "stress_index": 6
+    },
+    {
+      "accent": "дозировать",
+      "stress_index": 3
+    },
+    {
+      "accent": "ждала",
+      "stress_index": 4
+    },
+    {
+      "accent": "закупорить",
+      "stress_index": 3
+    },
+    {
+      "accent": "занять",
+      "stress_index": 3
+    },
+    {
+      "accent": "занял",
+      "stress_index": 1
+    },
+    {
+      "accent": "заняла",
+      "stress_index": 5
+    },
+    {
+      "accent": "заняли",
+      "stress_index": 1
+    },
+    {
+      "accent": "заперла",
+      "stress_index": 6
+    },
+    {
+      "accent": "запломбировать",
+      "stress_index": 11
+    },
+    {
+      "accent": "защемит",
+      "stress_index": 5
+    },
+    {
+      "accent": "звала",
+      "stress_index": 4
+    },
+    {
+      "accent": "кашлянуть",
+      "stress_index": 1
+    },
+    {
+      "accent": "клала",
+      "stress_index": 2
+    },
+    {
+      "accent": "кралась",
+      "stress_index": 2
+    },
+    {
+      "accent": "кровоточить",
+      "stress_index": 8
+    },
+    {
+      "accent": "лгала",
+      "stress_index": 4
+    },
+    {
+      "accent": "лила",
+      "stress_index": 3
+    },
+    {
+      "accent": "лилась",
+      "stress_index": 3
+    },
+    {
+      "accent": "наделит",
+      "stress_index": 5
+    },
+    {
+      "accent": "надорвалась",
+      "stress_index": 8
+    },
+    {
+      "accent": "назвалась",
+      "stress_index": 6
+    },
+    {
+      "accent": "накренится",
+      "stress_index": 6
+    },
+    {
+      "accent": "налила",
+      "stress_index": 5
+    },
+    {
+      "accent": "нарвала",
+      "stress_index": 6
+    },
+    {
+      "accent": "начать",
+      "stress_index": 3
+    },
+    {
+      "accent": "начал",
+      "stress_index": 1
+    },
+    {
+      "accent": "начала",
+      "stress_index": 5
+    },
+    {
+      "accent": "начали",
+      "stress_index": 1
+    },
+    {
+      "accent": "обзвонит",
+      "stress_index": 6
+    },
+    {
+      "accent": "облегчит",
+      "stress_index": 6
+    },
+    {
+      "accent": "облилась",
+      "stress_index": 5
+    },
+    {
+      "accent": "обнялась",
+      "stress_index": 5
+    },
+    {
+      "accent": "обогнала",
+      "stress_index": 7
+    },
+    {
+      "accent": "ободрала",
+      "stress_index": 7
+    },
+    {
+      "accent": "ободрить",
+      "stress_index": 5
+    },
+    {
+      "accent": "ободрит",
+      "stress_index": 5
+    },
+    {
+      "accent": "ободриться",
+      "stress_index": 5
+    },
+    {
+      "accent": "ободрится",
+      "stress_index": 5
+    },
+    {
+      "accent": "обострить",
+      "stress_index": 6
+    },
+    {
+      "accent": "одолжить",
+      "stress_index": 5
+    },
+    {
+      "accent": "одолжит",
+      "stress_index": 5
+    },
+    {
+      "accent": "озлобить",
+      "stress_index": 3
+    },
+    {
+      "accent": "оклеить",
+      "stress_index": 3
+    },
+    {
+      "accent": "окружит",
+      "stress_index": 5
+    },
+    {
+      "accent": "опошлить",
+      "stress_index": 2
+    },
+    {
+      "accent": "осведомиться",
+      "stress_index": 3
+    },
+    {
+      "accent": "осведомится",
+      "stress_index": 3
+    },
+    {
+      "accent": "отбыла",
+      "stress_index": 5
+    },
+    {
+      "accent": "отдала",
+      "stress_index": 5
+    },
+    {
+      "accent": "откупорить",
+      "stress_index": 3
+    },
+    {
+      "accent": "отозвала",
+      "stress_index": 7
+    },
+    {
+      "accent": "отозвалась",
+      "stress_index": 7
+    },
+    {
+      "accent": "перезвонит",
+      "stress_index": 8
+    },
+    {
+      "accent": "перелила",
+      "stress_index": 7
+    },
+    {
+      "accent": "плодоносить",
+      "stress_index": 8
+    },
+    {
+      "accent": "пломбировать",
+      "stress_index": 9
+    },
+    {
+      "accent": "повторит",
+      "stress_index": 6
+    },
+    {
+      "accent": "позвала",
+      "stress_index": 6
+    },
+    {
+      "accent": "позвонит",
+      "stress_index": 6
+    },
+    {
+      "accent": "полила",
+      "stress_index": 5
+    },
+    {
+      "accent": "положить",
+      "stress_index": 5
+    },
+    {
+      "accent": "положил",
+      "stress_index": 5
+    },
+    {
+      "accent": "понять",
+      "stress_index": 3
+    },
+    {
+      "accent": "поняла",
+      "stress_index": 5
+    },
+    {
+      "accent": "послала",
+      "stress_index": 4
+    },
+    {
+      "accent": "прибыть",
+      "stress_index": 4
+    },
+    {
+      "accent": "прибыл",
+      "stress_index": 2
+    },
+    {
+      "accent": "прибыла",
+      "stress_index": 6
+    },
+    {
+      "accent": "прибыли",
+      "stress_index": 2
+    },
+    {
+      "accent": "принять",
+      "stress_index": 4
+    },
+    {
+      "accent": "принял",
+      "stress_index": 2
+    },
+    {
+      "accent": "приняла",
+      "stress_index": 6
+    },
+    {
+      "accent": "приняли",
+      "stress_index": 2
+    },
+    {
+      "accent": "рвала",
+      "stress_index": 4
+    },
+    {
+      "accent": "сверлит",
+      "stress_index": 5
+    },
+    {
+      "accent": "сняла",
+      "stress_index": 4
+    },
+    {
+      "accent": "создала",
+      "stress_index": 6
+    },
+    {
+      "accent": "сорвала",
+      "stress_index": 6
+    },
+    {
+      "accent": "убрала",
+      "stress_index": 5
+    },
+    {
+      "accent": "углубить",
+      "stress_index": 5
+    },
+    {
+      "accent": "укрепит",
+      "stress_index": 5
+    },
+    {
+      "accent": "черпать",
+      "stress_index": 1
+    },
+    {
+      "accent": "щемит",
+      "stress_index": 3
+    },
+    {
+      "accent": "щёлкать",
+      "stress_index": 1
+    },
+    {
+      "accent": "довезённый",
+      "stress_index": 5
+    },
+    {
+      "accent": "загнутый",
+      "stress_index": 1
+    },
+    {
+      "accent": "занятый",
+      "stress_index": 1
+    },
+    {
+      "accent": "занята",
+      "stress_index": 5
+    },
+    {
+      "accent": "запертый",
+      "stress_index": 1
+    },
+    {
+      "accent": "заселённый",
+      "stress_index": 5
+    },
+    {
+      "accent": "заселена",
+      "stress_index": 7
+    },
+    {
+      "accent": "кровоточащий",
+      "stress_index": 8
+    },
+    {
+      "accent": "наживший",
+      "stress_index": 3
+    },
+    {
+      "accent": "наливший",
+      "stress_index": 3
+    },
+    {
+      "accent": "нанявшийся",
+      "stress_index": 3
+    },
+    {
+      "accent": "начавший",
+      "stress_index": 3
+    },
+    {
+      "accent": "начатый",
+      "stress_index": 1
+    },
+    {
+      "accent": "низведённый",
+      "stress_index": 6
+    },
+    {
+      "accent": "облегчённый",
+      "stress_index": 6
+    },
+    {
+      "accent": "ободрённый",
+      "stress_index": 5
+    },
+    {
+      "accent": "обострённый",
+      "stress_index": 6
+    },
+    {
+      "accent": "отключённый",
+      "stress_index": 6
+    },
+    {
+      "accent": "повторённый",
+      "stress_index": 6
+    },
+    {
+      "accent": "поделённый",
+      "stress_index": 5
+    },
+    {
+      "accent": "понявший",
+      "stress_index": 3
+    },
+    {
+      "accent": "принятый",
+      "stress_index": 2
+    },
+    {
+      "accent": "принята",
+      "stress_index": 6
+    },
+    {
+      "accent": "приручённый",
+      "stress_index": 6
+    },
+    {
+      "accent": "проживший",
+      "stress_index": 4
+    },
+    {
+      "accent": "снята",
+      "stress_index": 4
+    },
+    {
+      "accent": "согнутый",
+      "stress_index": 1
+    },
+    {
+      "accent": "углублённый",
+      "stress_index": 6
+    },
+    {
+      "accent": "закупорив",
+      "stress_index": 3
+    },
+    {
+      "accent": "начав",
+      "stress_index": 3
+    },
+    {
+      "accent": "начавшись",
+      "stress_index": 3
+    },
+    {
+      "accent": "отдав",
+      "stress_index": 3
+    },
+    {
+      "accent": "поняв",
+      "stress_index": 3
+    },
+    {
+      "accent": "прибыв",
+      "stress_index": 4
+    },
+    {
+      "accent": "создав",
+      "stress_index": 4
+    },
+    {
+      "accent": "вовремя",
+      "stress_index": 1
+    },
+    {
+      "accent": "доверху",
+      "stress_index": 1
+    },
+    {
+      "accent": "донизу",
+      "stress_index": 1
+    },
+    {
+      "accent": "досуха",
+      "stress_index": 1
+    },
+    {
+      "accent": "засветло",
+      "stress_index": 1
+    },
+    {
+      "accent": "надолго",
+      "stress_index": 3
+    },
+    {
+      "accent": "ненадолго",
+      "stress_index": 5
+    }
+  ]
+}
