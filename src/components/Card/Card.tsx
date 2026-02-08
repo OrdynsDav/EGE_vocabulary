@@ -29,7 +29,7 @@ export function Card({ words }: { words: CardProps[] }) {
     }
     setRevealedWrongIndex(null);
     setIsLoadingNext(true);
-    const nextWord = shuffle(words, currentWord);
+    const nextWord = shuffle(words, currentWord !== null ? currentWord : undefined);
     nextWordTimerRef.current = setTimeout(() => {
       setCurrentWord(nextWord);
       setIsLoadingNext(false);
@@ -47,7 +47,7 @@ export function Card({ words }: { words: CardProps[] }) {
   const handleCorrect = () => {
     setRevealedWrongIndex(null);
     setIsLoadingNext(true);
-    const nextWord = shuffle(words, currentWord);
+    const nextWord = shuffle(words, currentWord !== null ? currentWord : undefined);
     nextWordTimerRef.current = setTimeout(() => {
       setCurrentWord(nextWord);
       setIsLoadingNext(false);
