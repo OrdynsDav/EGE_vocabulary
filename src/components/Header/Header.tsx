@@ -14,7 +14,7 @@ export function Header() {
   return (
     <header className="mb-4 border-b border-white/10 pb-3">
       <div className="container">
-        <div className="flex w-full flex-row items-center gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex w-full flex-col items-center gap-3 min-[450px]:flex-row sm:items-center sm:justify-between">
           <Link href={'/'} className="flex items-center gap-3">
             <IconLogo />
           </Link>
