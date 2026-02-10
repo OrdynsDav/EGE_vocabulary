@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useAuth } from "@/components/Providers/AuthProvider/AuthProvider";
 import { AuthModal } from "@/components/Auth/AuthModal";
 import { IconLogo } from "../ICONS/Logo";
+import { DotsLoader } from "../Loaders/DotsLoader/DotsLoader";
+import { ProgressLoader } from "../Loaders/ProgressLoader/ProgressLoader";
 
 export function Header() {
   const { user, authReady, loading } = useAuth();
@@ -26,8 +28,8 @@ export function Header() {
             )}
 
             {!authReady ? (
-              <div className="w-full text-center rounded-lg bg-blue-500 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm sm:w-auto">
-                Загрузка...
+              <div className="w-full text-center rounded-lg bg-blue-500 p-3 text-xs font-semibold uppercase tracking-wide text-white shadow-sm sm:w-auto">
+                <ProgressLoader />
               </div>
             ) : !user ? (
               <button
@@ -49,7 +51,7 @@ export function Header() {
             ) : (
               <Link
                 href="/profile"
-                className="w-full rounded-lg bg-blue-500 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm hover:bg-gray-700 hover:text-gray-100 hover:border-gray-700 transition-colors sm:w-auto text-center"
+                className="w-full rounded-lg bg-blue-500 p-3 text-xs font-semibold uppercase tracking-wide text-white shadow-sm hover:bg-gray-700 hover:text-gray-100 hover:border-gray-700 transition-colors sm:w-auto text-center"
               >
                 Профиль
               </Link>

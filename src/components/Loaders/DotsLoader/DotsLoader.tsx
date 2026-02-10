@@ -1,7 +1,7 @@
 import "./DotsLoader.css"
 
-export function DotsLoader() {
+export function DotsLoader({size}: {size?: 'small' | 'medium' | 'large'}) {
     return (
-        <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        <div className={`lds-ellipsis lds-ellipsis--size-${size}`}><div></div><div></div><div></div><div></div></div>
     )
 }
