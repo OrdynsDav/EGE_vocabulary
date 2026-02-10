@@ -1,10 +1,13 @@
 import { ProfileSchema, PublicUser, WordsSchema, PasswordResetResponse } from "./interfaces";
 import type { CardProps } from "@/interfaces";
 
-// В проде URL бэкенда берём из NEXT_PUBLIC_API_URL,
-// а локально по умолчанию используем http://localhost:3001.
+// В проде по умолчанию ходим на задеплоенный сервер,
+// а локально — на http://localhost:3001.
 const BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:3002";
+  process.env.NEXT_PUBLIC_API_URL ??
+  (process.env.NODE_ENV === "production"
+    ? "https://ege-liart.vercel.app"
+    : "http://localhost:3001");
 
 // -------- Words --------
 
