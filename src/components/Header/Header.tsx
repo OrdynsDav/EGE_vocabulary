@@ -1,112 +1,63 @@
+'use client';
+
+import { useState } from "react";
+import Link from "next/link";
+import { useAuth } from "@/components/Providers/AuthProvider/AuthProvider";
+import { AuthModal } from "@/components/Auth/AuthModal";
+import { IconLogo } from "../ICONS/Logo";
+
 export function Header() {
+  const { user, authReady, loading } = useAuth();
+  const [authOpen, setAuthOpen] = useState(false);
+  const [pressed, setPressed] = useState(false);
+
   return (
-    <header>
+    <header className="mb-4 border-b border-white/10 pb-3">
       <div className="container">
-        <svg
-          className="m-auto"
-          xmlns="http://www.w3.org/2000/svg"
-          width="350"
-          height="120"
-          viewBox="0 0 400 120"
-          fill="none"
-        >
-          <g id="book-icon">
-            <rect x="20" y="35" width="50" height="50" rx="4" fill="#8B5CF6" />
-            <rect x="22" y="37" width="46" height="46" rx="3" fill="white" />
-            <line
-              x1="45"
-              y1="37"
-              x2="45"
-              y2="83"
-              stroke="#8B5CF6"
-              strokeWidth="2"
-            />
-            <line
-              x1="30"
-              y1="50"
-              x2="40"
-              y2="50"
-              stroke="#8B5CF6"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-            <line
-              x1="30"
-              y1="58"
-              x2="40"
-              y2="58"
-              stroke="#8B5CF6"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-            <line
-              x1="30"
-              y1="66"
-              x2="40"
-              y2="66"
-              stroke="#8B5CF6"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
+        <div className="flex w-full flex-row items-center gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <Link href={'/'} className="flex items-center gap-3">
+            <IconLogo />
+          </Link>
+          <div className="flex w-full items-center justify-between gap-3 sm:w-auto sm:justify-end">
+            {authReady && user && (
+              <span className="hidden text-sm text-gray-200 sm:inline">
+                Привет, <span className="font-semibold">{user.name}</span>
+              </span>
+            )}
 
-            <line
-              x1="50"
-              y1="50"
-              x2="60"
-              y2="50"
-              stroke="#8B5CF6"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-            <line
-              x1="50"
-              y1="58"
-              x2="60"
-              y2="58"
-              stroke="#8B5CF6"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-            <line
-              x1="50"
-              y1="66"
-              x2="60"
-              y2="66"
-              stroke="#8B5CF6"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-          </g>
-          <g id="speech-bubble">
-            <circle cx="65" cy="45" r="18" fill="#8B5CF6" />
-            <polygon points="58,58 65,63 62,58" fill="#8B5CF6" />
-
-            <line
-              x1="62"
-              y1="42"
-              x2="68"
-              y2="36"
-              stroke="white"
-              strokeWidth="3"
-              strokeLinecap="round"
-            />
-          </g>
-
-          <g id="text">
-            <text
-              x="110"
-              y="70"
-              fontFamily="Inter, Poppins, sans-serif"
-              fontSize="32"
-              fontWeight="600"
-              fill="#e5e7eb"
-            >
-              Справочник ЕГЭ
-            </text>
-          </g>
-        </svg>
-        
+            {!authReady ? (
+              <div className="w-full text-center rounded-lg bg-blue-500 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm sm:w-auto">
+                Загрузка...
+              </div>
+            ) : !user ? (
+              <button
+                type="button"
+                onClick={() => setAuthOpen(true)}
+                onTouchStart={() => setPressed(true)}
+                onTouchEnd={() => setPressed(false)}
+                disabled={loading}
+                className={`w-full rounded-lg bg-blue-500 p-3 text-xs font-semibold uppercase tracking-wide text-white shadow-sm hover:bg-gray-700 hover:text-gray-100 hover:border-gray-700 ${
+                  pressed ? "bg-gray-700 text-gray-100" : ""
+                } transition-colors disabled:opacity-60 sm:w-auto`}
+              >
+                <div className="flex items-center justify-center gap-2">
+                  <span>Войти</span>
+                  <span className="h-4 w-px bg-white/70" aria-hidden="true" />
+                  <span>Регистрация</span>
+                </div>
+              </button>
+            ) : (
+              <Link
+                href="/profile"
+                className="w-full rounded-lg bg-blue-500 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm hover:bg-gray-700 hover:text-gray-100 hover:border-gray-700 transition-colors sm:w-auto text-center"
+              >
+                Профиль
+              </Link>
+            )}
+          </div>
+        </div>
       </div>
+      <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} />
     </header>
   );
 }

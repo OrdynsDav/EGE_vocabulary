@@ -2,8 +2,7 @@
 
 import { CardProps } from "@/interfaces";
 import { formatAccent } from "@/utils/format-accent";
-import { LoaderDots } from "../Loaders/Dots";
-import { shuffle } from "@/utils/shuffle";
+import { DotsLoader } from "../Loaders/DotsLoader/DotsLoader";
 import { AutoNextCountdown } from "../AutoNextCountdown/AutoNextCountdown";
 import { useTab } from "@/components/Providers/TabProvider/TabProvider";
 import { useState, useEffect, useRef, useCallback } from "react";
@@ -13,16 +12,34 @@ const AUTO_NEXT_MS = AUTO_NEXT_SEC * 1000;
 
 export function Card({ words }: { words: CardProps[] }) {
   const { tab } = useTab();
-  const activeTab = tab === 'accent' ? 'accents' : 'spelling';
-  const [currentWord, setCurrentWord] = useState<CardProps | null>(null);
+  const activeTab = tab === "accent" ? "accents" : "spelling";
+
+  const [order, setOrder] = useState<number[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoadingNext, setIsLoadingNext] = useState(false);
   const [revealedWrongIndex, setRevealedWrongIndex] = useState<number | null>(null);
   const nextWordTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const autoNextTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // При первом монтировании (и при изменении набора слов) один раз
+  // перемешиваем индексы слов (Fisher–Yates), чтобы пройти все без повторов.
   useEffect(() => {
-    setCurrentWord(shuffle(words));
-  }, []);
+    if (!words.length) {
+      setOrder([]);
+      setCurrentIndex(0);
+      return;
+    }
+    const indexes = words.map((_, i) => i);
+    for (let i = indexes.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indexes[i], indexes[j]] = [indexes[j], indexes[i]];
+    }
+    setOrder(indexes);
+    setCurrentIndex(0);
+  }, [words]);
+
+  const currentWord =
+    order.length && words.length ? words[order[currentIndex] % words.length] : null;
 
   const goToNextWord = useCallback(() => {
     if (autoNextTimerRef.current) {
@@ -31,13 +48,16 @@ export function Card({ words }: { words: CardProps[] }) {
     }
     setRevealedWrongIndex(null);
     setIsLoadingNext(true);
-    const nextWord = shuffle(words, currentWord !== null ? currentWord : undefined);
+
+    const nextIndex =
+      order.length > 0 ? (currentIndex + 1) % order.length : 0;
+
     nextWordTimerRef.current = setTimeout(() => {
-      setCurrentWord(nextWord);
+      setCurrentIndex(nextIndex);
       setIsLoadingNext(false);
       nextWordTimerRef.current = null;
     }, 400);
-  }, [words, currentWord]);
+  }, [currentIndex, order.length]);
 
   useEffect(() => {
     return () => {
@@ -49,9 +69,12 @@ export function Card({ words }: { words: CardProps[] }) {
   const handleCorrect = () => {
     setRevealedWrongIndex(null);
     setIsLoadingNext(true);
-    const nextWord = shuffle(words, currentWord !== null ? currentWord : undefined);
+
+    const nextIndex =
+      order.length > 0 ? (currentIndex + 1) % order.length : 0;
+
     nextWordTimerRef.current = setTimeout(() => {
-      setCurrentWord(nextWord);
+      setCurrentIndex(nextIndex);
       setIsLoadingNext(false);
       nextWordTimerRef.current = null;
     }, 400);
@@ -63,7 +86,7 @@ export function Card({ words }: { words: CardProps[] }) {
   };
 
   if (!currentWord || isLoadingNext) {
-    return <LoaderDots />;
+    return <DotsLoader />;
   }
 
   const isRevealed = revealedWrongIndex !== null;

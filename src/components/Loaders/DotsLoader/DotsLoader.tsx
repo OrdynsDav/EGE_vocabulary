@@ -1,6 +1,6 @@
-import "./Dots.css"
+import "./DotsLoader.css"
 
-export function LoaderDots() {
+export function DotsLoader() {
     return (
         <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
     )
